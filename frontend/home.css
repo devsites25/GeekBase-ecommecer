@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 
 * {
   padding: 0;
@@ -146,7 +147,9 @@
   /* background-color: #a9aaf8; */
   width: 95%;
   height: 50px;
+  margin-top: 15px;
   display: flex;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -184,4 +187,32 @@
 #nav-conteiner p {
   margin-left: 35%;
   font-size: 15px;
+}
+section {
+  margin-bottom: 60px;
+}
+main {
+  /* margin-top: 20px; */
+  display: grid;
+  align-items: center;
+  /* height: 500px; */
+  /* background-color: #a9b8f0; */
+}
+main h3 {
+  /* background-color: #a9b8f0; */
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  font-style: normal;
+  width: 30%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10%;
+}
+main hr {
+  background-color: antiquewhite;
+  width: 80%;
+  margin: auto;
 }
