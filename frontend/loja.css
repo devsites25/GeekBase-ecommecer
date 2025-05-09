@@ -152,9 +152,9 @@ body {
   /* background-color: #a9aaf8; */
   width: 95%;
   height: 50px;
-  margin-top: 15px;
+  /* margin-top: 8px; */
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -192,4 +192,11 @@ body {
 #nav-conteiner p {
   margin-left: 35%;
   font-size: 15px;
+}
+
+/* div da imagem */
+
+.image-content-main {
+  width: 100%;
+  height: 550px;
 }
