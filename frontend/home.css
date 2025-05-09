@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -11,6 +12,7 @@
 
 html,
 body {
+  background-color: #f8f8f8;
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
@@ -65,6 +67,7 @@ body {
   padding-top: 8px;
   margin-left: 10%;
   background-color: #e3e9fc;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.407);
 }
 #search_category:focus {
   font-size: 0.9em;
@@ -231,15 +234,6 @@ main hr {
   margin: auto;
 }
 
-.product-display {
-  display: grid;
-  /* background-color: #a9aaf8; */
-  width: 80%;
-  /* margin-top: 35px; */
-  padding: 10px;
-  margin: auto;
-}
-
 /* estilização do footer */
 
 footer {
@@ -290,4 +284,67 @@ footer p {
   align-items: center;
   width: 100vw;
   height: 50px;
+}
+
+/* conteúdo dos produtos */
+.product-display {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  /* background-color: #a9aaf8; */
+  height: auto;
+  width: 85%;
+  padding: 20px;
+  margin: auto;
+  gap: 20px;
+}
+
+.product-consteiner {
+  background-color: #f2f3f5;
+  width: 367px;
+  height: 488px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+  padding: 1.8%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.product-consteiner:active {
+  transform: scale(0.9);
+}
+.conteiner-image-product {
+  background-color: #e3e9fc;
+  height: 70%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.412);
+  overflow: hidden;
+}
+.images-product {
+  transition: 0.5s;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.images-product:hover {
+  transform: scale(1.4);
+}
+.category-product {
+  /* background-color: #7d88eb; */
+  color: #ea543a;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.names-product {
+  /* background-color: #a9b8f0; */
+  font-family: "Jost", sans-serif;
+}
+
+/* warning */
+
+.warning {
+  /* background-color: #7d88eb; */
+  width: 25%;
+  margin-left: 10%;
 }
