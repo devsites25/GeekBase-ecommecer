@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 #header-conteiner {
@@ -188,11 +196,17 @@
   margin-left: 35%;
   font-size: 15px;
 }
-section {
+
+/* --------------------------- */
+.storage-carosel {
   margin-bottom: 60px;
 }
+/* --------------------------- */
+
+/* estilização do main */
+
 main {
-  /* margin-top: 20px; */
+  margin-top: 20px;
   display: grid;
   align-items: center;
   /* height: 500px; */
@@ -208,11 +222,72 @@ main h3 {
   height: 70px;
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-left: 10%;
 }
 main hr {
   background-color: antiquewhite;
   width: 80%;
   margin: auto;
+}
+
+.product-display {
+  display: grid;
+  /* background-color: #a9aaf8; */
+  width: 80%;
+  /* margin-top: 35px; */
+  padding: 10px;
+  margin: auto;
+}
+
+/* estilização do footer */
+
+footer {
+  background-color: #484141;
+  width: 100vw;
+  height: 100px;
+  display: grid;
+}
+
+.social-network {
+  /* background-color: #e3e9fc; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.insta {
+  color: #ea543a;
+}
+.linkedin {
+  color: rgb(78, 78, 219);
+}
+.exis {
+  color: rgb(12, 11, 11);
+}
+
+.navigation-footer-pages {
+  /* background-color: #a9b8f0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.navigation-footer-pages a {
+  text-decoration: none;
+  color: white;
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-style: normal;
+}
+footer p {
+  background-color: #2c2828;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
 }
