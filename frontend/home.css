@@ -287,6 +287,7 @@ footer p {
 }
 
 /* conteúdo dos produtos */
+
 .product-display {
   display: grid;
   grid-template-columns: repeat(4, 400px);
@@ -298,48 +299,45 @@ footer p {
   gap: 20px;
 }
 
+/* ---------- conteudo dos produtos vindo por API ------------ */
+
 .product-consteiner {
-  background-color: #f2f3f5;
-  width: 367px;
-  height: 488px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
-  padding: 1.8%;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
   cursor: pointer;
-  transition: 0.4s;
-}
-.product-consteiner:active {
-  transform: scale(0.9);
 }
 .conteiner-image-product {
-  background-color: #e3e9fc;
-  height: 70%;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.412);
   overflow: hidden;
 }
-.images-product {
-  transition: 0.5s;
+.conteiner-image-product img {
   width: 100%;
-  border-radius: 15px;
-  cursor: pointer;
+  height: auto;
+  border-radius: 4px;
+  transition: 0.5s;
 }
-.images-product:hover {
+.conteiner-image-product img:hover {
   transform: scale(1.4);
 }
+
 .category-product {
-  /* background-color: #7d88eb; */
-  color: #ea543a;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 1.3em;
-  margin-top: 15px;
-  margin-bottom: 0px;
+  font-size: 0.85rem;
+  color: #888;
 }
+
 .names-product {
-  /* background-color: #a9b8f0; */
-  font-family: "Jost", sans-serif;
+  font-size: 1.1rem;
+  margin: 8px 0 4px;
 }
+
+.prices-product {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* ---------- Fim ------------ */
 
 /* warning */
 
