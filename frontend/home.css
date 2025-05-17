@@ -397,3 +397,127 @@ footer p {
   width: 25%;
   margin-left: 10%;
 }
+
+/* media (max-width: 768px) para celulares*/
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #header-conteiner {
+    width: 100vw;
+    background-color: #205474;
+  }
+
+  #name-site {
+    display: none;
+  }
+
+  .logo-site {
+    margin-left: 1%;
+  }
+
+  .conteiner-main-header {
+    /* background-color: #aebddb; */
+    width: 100vw;
+    display: flex;
+  }
+
+  .input-conteiner {
+    width: 50%;
+    margin-left: 4%;
+    position: relative;
+  }
+
+  #search_category {
+    width: 100%;
+  }
+
+  #search_category::placeholder {
+    font-size: 0.9em;
+  }
+
+  .magnifier-input {
+    position: absolute;
+    top: 40%;
+    left: 88%;
+    width: 15px;
+    height: 15px;
+  }
+
+  .conteiner-hearth {
+    margin-left: 3%;
+  }
+
+  /* navbar */
+
+  #nav-conteiner {
+    background-color: #0367a6;
+    width: 100vw;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  #nav-conteiner p {
+    display: none;
+  }
+  .conteiner-main-navbar {
+    /* background-color: #27ae60; */
+    width: 50%;
+    height: 100%;
+    margin-top: 1%;
+    margin-left: -6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteiner-main-navbar ul {
+    /* background-color: #0367a6; */
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteiner-main-navbar ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  /* conteudo principal */
+
+  main {
+    display: grid;
+    /* background-color: #27ae60; */
+  }
+  main h3 {
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2%;
+    font-size: 1.5em;
+    /* background-color: yellowgreen; */
+    width: 50%;
+  }
+  main hr {
+    margin-left: 2%;
+    width: 90vw;
+  }
+
+  .product-display {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    /* background-color: #0367a6; */
+    width: 100vw;
+    margin-left: 0%;
+  }
+  .product-consteiner {
+    width: 260px;
+    gap: 20px;
+  }
+}
