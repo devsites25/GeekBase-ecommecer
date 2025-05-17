@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 
 * {
   padding: 0;
@@ -13,7 +14,8 @@
 
 html,
 body {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  background-image: linear-gradient(45deg, #efefef, #f5f5f5);
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
@@ -23,7 +25,8 @@ body {
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  background-color: #7d88eb;
+  background-image: linear-gradient(45deg, #023859, #024873, #0367a6);
+  /* background-color: #7d88eb; */
   width: 100vw;
   height: 130px;
 }
@@ -37,9 +40,10 @@ body {
   margin: auto;
 }
 #header-conteiner h1 {
-  font-family: "Jaro", sans-serif;
+  font-family: "Passion One", sans-serif;
   font-weight: 400;
-  font-size: 1.5em;
+  font-style: normal;
+  font-size: 2.5em;
   color: #ffffff;
   margin: 0% 6% 0% 1%;
 }
@@ -55,26 +59,42 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: #ffffff; */
+  width: 35%;
   /* width: 400px; */
   position: relative;
 }
 
 #search_category {
-  width: 691px;
+  width: 100%;
+  /* max-width: 691px; */
   height: 49px;
   border-radius: 20px;
   border: none;
-  padding-left: 20px;
-  padding-top: 8px;
-  margin-left: 10%;
+  padding: 12px 20px 6px 20px;
+  /* padding: 20px; */
+  line-height: 40px;
+  margin: 0 auto;
+  display: block;
   background-color: #e3e9fc;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.407);
+  color: #333;
+  font-size: 1em;
+  font-weight: 100;
+  font-style: normal;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
+
 #search_category:focus {
-  font-size: 0.9em;
+  outline: none;
+  box-shadow: 0 0 10px rgba(50, 100, 250, 0.87);
+  background-color: #d6defc;
 }
+
 #search_category::placeholder {
-  font-size: 1.3em;
+  font-size: 1.18em;
+  font-weight: 100;
+  /* background-color: #0367a6; */
+  color: #666;
 }
 .magnifier-input {
   position: absolute;
@@ -89,6 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0.2%;
   margin-left: 20%;
   position: relative;
 }
@@ -102,7 +123,7 @@ body {
 }
 .conteiner-hearth p {
   position: absolute;
-  background-color: #a9aaf8;
+  background-color: #dadae1;
   width: 22px;
   height: 22px;
   display: flex;
@@ -119,6 +140,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0.2%;
   margin-left: 2%;
   position: relative;
 }
@@ -132,7 +154,7 @@ body {
 }
 .conteiner-shopping p {
   position: absolute;
-  background-color: #a9aaf8;
+  background-color: #dadae1;
   width: 22px;
   height: 22px;
   display: flex;
@@ -147,7 +169,8 @@ body {
 /* Agora é a estilização da navBar */
 
 #nav-conteiner {
-  background-color: #a9b8f0;
+  /* background-color: #a9b8f0; */
+  background-image: linear-gradient(45deg, #aebddb, #cddbf0);
   width: 100vw;
   height: 70px;
   font-family: "Judson", serif;
@@ -180,12 +203,13 @@ body {
   justify-content: center;
   gap: 15%;
   margin-left: 5%;
+  margin-top: 0.1%;
 }
 #nav-conteiner ul a {
   text-decoration: none;
   color: rgb(60, 57, 57);
-  font-family: "Judson", serif;
-  font-weight: 600;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
   position: relative;
@@ -233,7 +257,8 @@ body {
 
 .image-content-main {
   width: 100%;
-  height: 550px;
+  height: 700px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.518));
 }
 
 /* informação da pagina */
@@ -282,7 +307,7 @@ aside {
 section {
   grid-area: section;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
@@ -297,7 +322,7 @@ select {
 /* conteudo vindo por API */
 
 .product-consteiner {
-  background-color: #fff;
+  background-color: #edeef0;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.423);
@@ -353,7 +378,7 @@ footer {
 .social-network {
   /* background-color: #e3e9fc; */
   height: 35px;
-  margin-top: 8px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,11 +405,12 @@ footer {
 }
 .navigation-footer-pages a {
   text-decoration: none;
-  color: white;
+  color: rgb(227, 224, 224);
   font-family: "Judson", serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-style: normal;
+  cursor: text;
 }
 footer p {
   background-color: #2c2828;
