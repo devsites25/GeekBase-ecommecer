@@ -257,7 +257,7 @@ body {
 
 .image-content-main {
   width: 100%;
-  height: 700px;
+  height: 750px;
   filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.518));
 }
 
@@ -344,7 +344,8 @@ select {
 .conteiner-image-product img {
   transition: 0.5s;
   width: 100%;
-  height: auto;
+  height: 280px;
+  /* height: auto; */
   border-radius: 4px;
 }
 .conteiner-image-product img:hover {

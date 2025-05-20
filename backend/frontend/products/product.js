@@ -183,3 +183,5 @@ if (produtos[id]) {
   document.getElementById("produto-container").innerHTML =
     "<p class='information'>Produto não encontrado.</p>";
 }
+
+module.exports = produtos;

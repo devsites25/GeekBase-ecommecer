@@ -51,9 +51,9 @@
     <nav id="nav-conteiner">
       <div class="conteiner-main-navbar">
         <ul>
-          <a class="pagehome" href="home.html">HOME</a>
-          <a class="pageshoping" href="loja.html">LOJA</a>
-          <a class="pageabout" href="sobre.html">SOBRE</a>
+          <a class="pagehome" href="/backend/frontend/index.html">HOME</a>
+          <a class="pageshoping" href="/backend/frontend/loja.html">LOJA</a>
+          <a class="pageabout" href="/backend/frontend/sobre.html">SOBRE</a>
         </ul>
         <p>
          Olá! Seja bem vindo a nossa loja de compras, segura e feita para você.
@@ -72,91 +72,133 @@
  <main>
    <aside>
     <select name="category" id="idcategory" >
-      <option value="categoria" selected>Categorias</option>
+      <option value="categorias">Categorias</option>
       <option value="roupas">Roupas</option>
       <option value="canecas">Canecas</option>
-      <option value="acessórios">Action figures</option>
+      <option value="action_figure">Action figures</option>
     </select>
    </aside>
    <section>
-        <div class="product-consteiner">
+        <div class="product-consteiner" data-id="6">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/roupas/roupa geek cubo magico.jpg" alt="camisageek03">
+                <img class="images-product" src="../imgs/roupas/roupa_geek_cubo_magico.jpg" alt="camisageek">
             </div>
             <p class="category-product">Roupa</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <h2 class="names-product">Roupa geek cubo magico</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+        <div class="product-consteiner" data-id="7">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/roupas/roupa geek evolution.jpg" alt="camisageek">
+                <img class="images-product" src="../imgs/roupas/roupa_geek_evolution.jpg" alt="camisageek02">
             </div>
             <p class="category-product">Roupa</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <h2 class="names-product">Roupa geek evolution</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+        <div class="product-consteiner" data-id="8">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/roupas/roupa geek pacman.jpg" alt="camisageek02">
+                <img class="images-product" src="../imgs/roupas/roupa_geek_pacman.jpg" alt="camisageek03">
             </div>
             <p class="category-product">Roupa</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <h2 class="names-product">Roupa geek pacman</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+         <div class="product-consteiner" data-id="9">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/roupas/roupa geek videogame controle.jpg" alt="camisageek03">
+                <img class="images-product" src="../imgs/roupas/roupa_geek_videgame_controle.jpg" alt="camisageek">
             </div>
             <p class="category-product">Roupa</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <h2 class="names-product">Roupa geek videgame controle</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+         <div class="product-consteiner" data-id="10">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/roupas/roupa linha de codigo.jpg" alt="camisageek">
+                <img class="images-product" src="../imgs/roupas/roupa_linha_de_codigo.jpg" alt="camisageek">
             </div>
             <p class="category-product">Roupa</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <h2 class="names-product">Roupa linha de codigo</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+        <!-- Canecas -->
+          <div class="product-consteiner" data-id="11">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/action_figures/action_figure geek capitao america.png" alt="camisageek02">
+                <img class="images-product" src="../imgs/canecas/caneca_gamer_boy_geek.jpg" alt="camisageek">
             </div>
-            <p class="category-product">Action figure</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <p class="category-product">Caneca</p>
+            <h2 class="names-product">Caneca gamer boy geek</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+        <div class="product-consteiner" data-id="12">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/action_figures/action_figure geek homem aranha.jpg" alt="camisageek03">
+                <img class="images-product" src="../imgs/canecas/caneca_geek_dev.jpg" alt="camisageek02">
             </div>
-            <p class="category-product">Action figure</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <p class="category-product">Caneca</p>
+            <h2 class="names-product">Caneca geek dev</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+        <div class="product-consteiner" data-id="13">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/action_figures/action_figure god of war.png" alt="camisageek">
+                <img class="images-product" src="../imgs/canecas/caneca_geek_quadrinho.png" alt="camisageek03">
             </div>
-            <p class="category-product">Action figure</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <p class="category-product">Caneca</p>
+            <h2 class="names-product">Caneca geek quadrinho</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+         <div class="product-consteiner" data-id="14">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/action_figures/action_figure sasori naruto.jpg" alt="camisageek02">
+                <img class="images-product" src="../imgs/canecas/caneca_harry_potter_geek.jpg" alt="camisageek">
             </div>
-            <p class="category-product">Action figure</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <p class="category-product">Caneca</p>
+            <h2 class="names-product">Caneca harry potter geek</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
-        <div class="product-consteiner">
+         <div class="product-consteiner" data-id="15">
             <div class="conteiner-image-product">
-                <img class="images-product" src="../imgs/action_figures/action_figure the witcher.png" alt="camisageek03">
+                <img class="images-product" src="../imgs/canecas/ceneca_geek_game_over.jpg" alt="camisageek">
+            </div>
+            <p class="category-product">Caneca</p>
+            <h2 class="names-product">Ceneca geek game over</h2>
+            <h6 class="prices-product">R$ 35,99</h6>
+        </div>
+        <!-- action figure -->
+          <div class="product-consteiner" data-id="16">
+            <div class="conteiner-image-product">
+                <img class="images-product" src="../imgs/action_figures/action_figure_geek_capitao_america.png" alt="camisageek">
             </div>
             <p class="category-product">Action figure</p>
-            <h2 class="names-product">Nome do produto</h2>
+            <h2 class="names-product">Action figure geek capitao</h2>
+            <h6 class="prices-product">R$ 35,99</h6>
+        </div>
+        <div class="product-consteiner" data-id="17">
+            <div class="conteiner-image-product">
+                <img class="images-product" src="../imgs/action_figures/action_figure_geek_homem_aranha.jpg" alt="camisageek02">
+            </div>
+            <p class="category-product">Action figure</p>
+            <h2 class="names-product">Action figure geek homem aranha</h2>
+            <h6 class="prices-product">R$ 35,99</h6>
+        </div>
+        <div class="product-consteiner" data-id="18">
+            <div class="conteiner-image-product">
+                <img class="images-product" src="../imgs/action_figures/action_figure_god_of_war.png" alt="camisageek03">
+            </div>
+            <p class="category-product">Action figure</p>
+            <h2 class="names-product">Action figure god of war</h2>
+            <h6 class="prices-product">R$ 35,99</h6>
+        </div>
+         <div class="product-consteiner" data-id="19">
+            <div class="conteiner-image-product">
+                <img class="images-product" src="../imgs/action_figures/action_figure_sasori_naruto.jpg" alt="camisageek">
+            </div>
+            <p class="category-product">Action figure</p>
+            <h2 class="names-product">Action figure sasori naruto</h2>
+            <h6 class="prices-product">R$ 35,99</h6>
+        </div>
+        <div class="product-consteiner" data-id="20">
+            <div class="conteiner-image-product">
+                <img class="images-product" src="../imgs/action_figures/action_figure_the_witcher.png" alt="camisageek">
+            </div>
+            <p class="category-product">Action figure</p>
+            <h2 class="names-product">Action figure the witcher</h2>
             <h6 class="prices-product">R$ 35,99</h6>
         </div>
    </section>
@@ -186,5 +228,8 @@
         <p>Copyright © 2025  GeekBase. Todos os direitos reservados</p>
     </footer>
 <!-- Fim do site -->
+ <script src="criarProdutos.js"></script>
+ <script src="products/product.js"></script>
+ <script src="selectProduct.js"></script>
   </body>
 </html>
