@@ -1,10 +1,7 @@
-const Sequelize = require("sequelize");
+const { Sequelize } = require("sequelize");
 const sequelize = new Sequelize("geekbase", "root", "@eertm290177", {
-  port: "localhost",
+  host: "localhost",
   dialect: "mysql",
 });
 
-module.exports = {
-  Sequelize,
-  sequelize,
-};
+module.exports = sequelize;
