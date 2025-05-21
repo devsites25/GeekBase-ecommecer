@@ -156,7 +156,7 @@ function aplicarEventoClick() {
   produtos.forEach((prod) => {
     prod.addEventListener("click", () => {
       const idProduto = prod.getAttribute("data-id");
-      window.location.href = `/backend/frontend/products/products.html?id=${idProduto}`;
+      window.location.href = `/backend/products/products.html?id=${idProduto}`;
     });
   });
 }
