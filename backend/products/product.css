@@ -457,38 +457,37 @@ footer p {
 
 /* conteúdo dos produtos */
 
-.product-display {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  /* background-color: #a9aaf8; */
-  height: auto;
-  width: 85%;
-  padding: 30px;
-  margin: auto;
-  gap: 20px;
-}
-
-/* ---------- conteudo dos produtos vindo por API ------------ */
+/* ---------- conteudo dos produtos ------------ */
 
 .product-consteiner {
   background-color: #edeef0;
-  width: 300px;
+  width: 350px;
+  height: 350px;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.423);
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 0;
 }
 .product-consteiner:active {
   transform: scale(0.9);
 }
+
 .conteiner-image-product {
+  width: 100%;
+  height: 250px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .conteiner-image-product img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 4px;
   transition: 0.5s;
 }
@@ -509,6 +508,37 @@ footer p {
 .prices-product {
   color: #27ae60;
   font-weight: bold;
+}
+
+section {
+  margin-top: 10px;
+  padding: 10px;
+  height: 400px;
+  overflow: hidden;
+  justify-content: flex-start;
+  position: relative;
+  /* flex-wrap: wrap; */
+  /* background-color: #27ae60; */
+}
+.infinite-wrapper {
+  display: flex;
+  width: max-content;
+  animation: infinite_translate 30s linear infinite;
+  z-index: 1;
+}
+.infinite-content {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+@keyframes infinite_translate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ---------- Fim ------------ */
@@ -630,18 +660,6 @@ footer p {
   main hr {
     margin-left: 2%;
     width: 90vw;
-  }
-
-  .product-display {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    /* background-color: #0367a6; */
-    width: 100vw;
-    margin-left: 0%;
-  }
-  .product-consteiner {
-    width: 260px;
-    gap: 20px;
   }
 
   #produto-container {
