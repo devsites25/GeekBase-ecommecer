@@ -16,7 +16,7 @@
     <!-- O header do site com logo, input de pesquisa, carrinho e favoritos -->
     <header id="header-conteiner">
       <div class="conteiner-main-header">
-        <img class="logo-site" src="/backend/image/logo.png" alt="logo" />
+        <img class="logo-site" src="../frontend/image/logo.png" alt="logo" />
         <h1 id="name-site">GeekBase</h1>
         <div class="input-conteiner">
           <input
@@ -28,18 +28,20 @@
           />
           <img
             class="magnifier-input"
-            src="/backend/image/lupa.png"
+            src="../frontend/image/lupa.png"
             alt="lupa"
           />
         </div>
         <div class="conteiner-hearth">
-          <a href="#"><img src="/backend/image/coracao.png" alt="coração" /></a>
+          <a href="#"
+            ><img src="../frontend/image/coracao.png" alt="coração"
+          /></a>
           <p class="count-add">0</p>
         </div>
         <div class="conteiner-shopping">
           <a href="#">
             <img
-              src="/backend/image/sacolas-de-compras.png"
+              src="../frontend/image/sacolas-de-compras.png"
               alt="sacolas-de-compras"
             />
           </a>
@@ -64,14 +66,16 @@
     <!-- Detalhes do produtos  -->
     <main>
       <div id="produto-container">
-        <img id="imagem-produto" />
-        <h2 id="nome-produto"></h2>
-        <p id="descricao"></p>
-        <p id="categoria-produto"></p>
-        <h4 id="preco-produto"></h4>
-        <div class="conteiner-button">
-          <button id="add_favorete">Adicionar aos favoritos</button>
-          <button id="add_shopping">Comprar agora</button>
+        <div class="conteiner-image"><img id="imagem-produto" /></div>
+        <div class="info-conteiner">
+          <h2 id="nome-produto"></h2>
+          <p id="categoria-produto"></p>
+          <p id="descricao"></p>
+          <h4 id="preco-produto"></h4>
+          <div class="conteiner-button">
+            <button id="add_favorete">Adicionar aos favoritos</button>
+            <button id="add_shopping">Comprar agora</button>
+          </div>
         </div>
       </div>
     </main>
