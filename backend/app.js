@@ -15,10 +15,17 @@ app.use("/favicon", express.static(path.join(__dirname, "favicon")));
 app.use("/frontend", express.static(path.join(__dirname, "frontend")));
 app.use(express.static(path.join(__dirname, "frontend")));
 
-// rotas
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "frontend", "index.html"));
-// });
+//rotas
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "index.html"));
+});
+
+app.get("/loja", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "loja.html"));
+});
+app.get("/sobre", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "sobre.html"));
+});
 
 // porta
 const port = 8081;

@@ -517,6 +517,7 @@ section {
   overflow: hidden;
   justify-content: flex-start;
   position: relative;
+  gap: 10px;
   /* flex-wrap: wrap; */
   /* background-color: #27ae60; */
 }
@@ -526,6 +527,7 @@ section {
   animation: infinite_translate 30s linear infinite;
   z-index: 1;
 }
+
 .infinite-content {
   display: flex;
   gap: 15px;
