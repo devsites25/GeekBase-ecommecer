@@ -132,7 +132,7 @@ function renderizarProdutos(ids) {
     },
   };
 
-  conteinerMain.innerHTML = ""; // limpa antes de preencher
+  conteinerMain.innerHTML = "";
 
   ids.forEach((id) => {
     const p = produtos[id];
@@ -161,5 +161,4 @@ function aplicarEventoClick() {
   });
 }
 
-// Executa ao carregar
 aplicarEventoClick();
