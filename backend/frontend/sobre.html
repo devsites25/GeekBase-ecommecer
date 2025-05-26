@@ -157,6 +157,34 @@
     <script src="../selectProduct.js"></script>
     <script src="/backend/criarProdutos.js"></script>
     <script src="/backend/products/product.js"></script>
-    <script src="../inputsearch/inputSearch.js"></script>
+    <script>
+      const inputSearch = document.getElementById("search_category");
+
+      inputSearch.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          const valor = inputSearch.value.trim().toLowerCase();
+
+          // Mapeamento dos possiveis textos
+          const mapeamento = {
+            roupa: "categoria-roupas",
+            roupas: "categoria-roupas",
+            caneca: "categoria-canecas",
+            canecas: "categoria-canecas",
+            "action figure": "categoria-action-figures",
+            "action figures": "categoria-action-figures",
+            figura: "categoria-action-figures",
+            figuras: "categoria-action-figures",
+          };
+
+          const idAlvo = mapeamento[valor];
+
+          if (idAlvo) {
+            window.location.href = "/backend/frontend/index.html";
+          } else {
+            alert("Categoria não encontrada!");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
